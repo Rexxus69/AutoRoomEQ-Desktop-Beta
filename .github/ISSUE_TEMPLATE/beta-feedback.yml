@@ -1,0 +1,152 @@
+name: Desktop beta feedback
+description: Tell us your PC and audio setup, what you tested, what went wrong and what you would like next.
+title: "[Desktop beta] Feedback – <PC / audio interface>"
+labels: ["beta-feedback", "desktop-beta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing AutoRoomEQ Desktop! Please fill in **Section 1 before installing** (you can submit the form and edit it later with your test results), then complete Sections 2–4 after using the app.
+        Do not post personal data, passwords, licence keys or the remote pairing code / link.
+
+  # ── 1. PC and audio setup ───────────────────────────────────────────────────
+  - type: input
+    id: version
+    attributes:
+      label: "1.1 App version"
+      description: "Shown at the top of the window, e.g. Desktop 0.2.3 β"
+      placeholder: "e.g. 0.2.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: "1.2 Windows version"
+      options:
+        - "Windows 11"
+        - "Windows 10"
+        - "Other / don't know"
+    validations:
+      required: true
+  - type: input
+    id: pc
+    attributes:
+      label: "1.3 PC model or CPU"
+      placeholder: "e.g. Lenovo ThinkPad T14, Intel i5-8250U mini-PC, Ryzen 7 5800X desktop"
+  - type: dropdown
+    id: install
+    attributes:
+      label: "1.4 Installation"
+      options:
+        - "First time (no previous AutoRoomEQ Desktop)"
+        - "Updated from the app (Update now)"
+        - "Replaced the exe by hand over a previous beta"
+    validations:
+      required: true
+  - type: dropdown
+    id: output
+    attributes:
+      label: "1.5 Audio output used"
+      multiple: true
+      options:
+        - "USB audio interface with ASIO"
+        - "USB DAC with WASAPI"
+        - "Onboard sound card"
+        - "HDMI / AV receiver"
+        - "Bluetooth"
+    validations:
+      required: true
+  - type: input
+    id: interface
+    attributes:
+      label: "1.6 Audio interface / DAC and driver"
+      placeholder: "e.g. Behringer UMC204HD (ASIO driver 5.x), Topping E30 (WASAPI)"
+  - type: input
+    id: mic
+    attributes:
+      label: "1.7 Measurement microphone and calibration file (if you measured)"
+      placeholder: "e.g. miniDSP UMIK-1 with calibration file, Behringer ECM8000 without calibration"
+  - type: dropdown
+    id: storage
+    attributes:
+      label: "1.8 Where your music files are"
+      multiple: true
+      options:
+        - "Internal disk"
+        - "External USB disk"
+        - "Network share / NAS"
+        - "Only web radio"
+
+  # ── 2. What you tested ──────────────────────────────────────────────────────
+  - type: checkboxes
+    id: tested
+    attributes:
+      label: "2. What you tested (tick what worked)"
+      options:
+        - label: "Measurement sweep with ASIO"
+        - label: "Measurement sweep with WASAPI"
+        - label: "Multi-position measurement and FIR correction designed"
+        - label: "Export: WAV / YAML / Equalizer APO"
+        - label: "Player: Bypass is bit-perfect, DAC follows the track sample rate"
+        - label: "Player: Bypass / RoomEQ A/B at the same loudness"
+        - label: "Library scan: my tracks and albums appear, with covers and lyrics"
+        - label: "Web radio with live metadata"
+        - label: "Phone remote on the home Wi-Fi"
+        - label: "Phone remote on mobile data"
+        - label: "Pairing with AutoRoomEQ Player for Android and exchange of presets / playlists"
+        - label: "UPnP/DLNA: PC library seen by another app"
+        - label: "UPnP/DLNA: another app plays on the PC (renderer)"
+        - label: "Self-update (Update now)"
+
+  # ── 3. Problems ─────────────────────────────────────────────────────────────
+  - type: checkboxes
+    id: problems
+    attributes:
+      label: "3.1 Problems found (tick all that apply)"
+      options:
+        - label: "App does not start (SmartScreen, antivirus, WebView2, blank window)"
+        - label: "App crashes or closes by itself"
+        - label: "App stops responding / freezes"
+        - label: "Audio device or ASIO driver not found"
+        - label: "Measurement fails: no signal, clipping or noisy result"
+        - label: "Correction sounds wrong, too quiet or distorted"
+        - label: "No sound, or sound from the wrong device"
+        - label: "Clicks, dropouts or stutter"
+        - label: "Wrong sample rate or not bit-perfect in Bypass"
+        - label: "Library empty or incomplete"
+        - label: "Wrong or missing metadata / cover art / lyrics"
+        - label: "Web radio does not play or stops"
+        - label: "Phone remote does not connect or says 'not paired'"
+        - label: "UPnP/DLNA not found by other apps"
+        - label: "Update fails"
+        - label: "Texts untranslated, cut off or overlapping"
+        - label: "High CPU use or fan noise"
+  - type: textarea
+    id: problem_details
+    attributes:
+      label: "3.2 Describe each problem"
+      description: "What you did, what you expected, what happened. Include the file format (e.g. FLAC 24/96) and whether it happens every time. For crashes and freezes please attach the files in %APPDATA%\\AutoRoomEQ Desktop\\logs (log, crash.txt, .dmp). Screenshots are welcome."
+      placeholder: |
+        1. Steps: ...
+           Expected: ...
+           Happened: ...
+           Every time? yes/no
+    validations:
+      required: false
+
+  # ── 4. Suggestions ──────────────────────────────────────────────────────────
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: "4. Suggestions: what should we improve or add next?"
+      placeholder: "Features you miss, streaming services you would like, anything confusing in the interface…"
+  - type: dropdown
+    id: rating
+    attributes:
+      label: "Overall, how usable is this beta for you?"
+      options:
+        - "5 – I use it every day"
+        - "4 – Good, a few issues"
+        - "3 – Usable with workarounds"
+        - "2 – Hard to use"
+        - "1 – Unusable on my PC"
