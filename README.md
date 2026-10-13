@@ -28,7 +28,7 @@ See the [release notes of the latest beta](https://github.com/Rexxus69/AutoRoomE
   - Bit-perfect in Bypass at 0 dB; automatic DAC sample rate per track.
   - Library with search, browsing by artist, album, genre, composer and year, playlists, favourites, and lyrics and artwork fetched online.
   - Web radio with live metadata.
-  - Streaming services (Qobuz, Tidal, Spotify…) are not integrated: use the Equalizer APO export to correct those apps system-wide.
+  - Streaming services (Qobuz, Tidal, Spotify…) are not built in. The app is a UPnP/DLNA renderer, so apps that can send a streaming service to a UPnP renderer should play through the correction (not tested with every app yet: feedback welcome); or use the Equalizer APO export to correct every app on the PC.
 - **Phone remote.** Pair your phone by QR code or 6-digit code. The remote works on Wi-Fi and, through an encrypted relay, on mobile data.
 - **UPnP/DLNA.** Your PC library is shared on the LAN as a MediaServer. The app also acts as a MediaRenderer, so other apps can play on it.
 - **AutoRoomEQ Player for Android.** It pairs with the desktop app: it works as a remote, and you can exchange presets, playlists, favourites and mic calibration.
