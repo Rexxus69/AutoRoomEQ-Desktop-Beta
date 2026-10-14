@@ -4,7 +4,7 @@
 [![Downloads latest](https://img.shields.io/github/downloads/Rexxus69/AutoRoomEQ-Desktop-Beta/latest/total?label=latest%20downloads)](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)
 [![Total downloads](https://img.shields.io/github/downloads/Rexxus69/AutoRoomEQ-Desktop-Beta/total?label=total%20downloads)](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases)
 
-**[⬇ Download the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)** · Windows 10/11 x64 · single `.exe`, no installer
+**[⬇ Download the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest/download/AutoRoomEQ_Desktop_beta_win64.zip)** ([release notes](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)) · Windows 10/11 x64 · single `.exe`, no installer
 
 AutoRoomEQ Desktop is a room-correction workstation and a bit-perfect music player in one exe.
 It is built around **AutoRoomEQ 2.1** by DSPxLab.
@@ -12,7 +12,7 @@ It is built around **AutoRoomEQ 2.1** by DSPxLab.
 ## Beta testers: 3 steps
 
 1. **Before downloading**, open the [Beta feedback form](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/issues/new?template=beta-feedback.yml) and fill in **Section 1: your PC and audio setup**.
-2. [Download the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest), unzip it and run `AutoRoomEQ Desktop.exe`.
+2. [Download the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest/download/AutoRoomEQ_Desktop_beta_win64.zip), unzip it and run `AutoRoomEQ Desktop.exe`.
 3. Use the app, then complete the same form: what worked, **the problems you found** (a list of typical problems is provided) and **your suggestions**.
 
 ## What's new
@@ -48,7 +48,7 @@ The SHA-256 of each zip is in its release notes; the in-app update checks it bef
 
 ## Italiano
 
-**[⬇ Scarica l'ultima beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)**. Funziona su Windows 10/11 a 64 bit ed è un singolo `.exe`, senza installazione.
+**[⬇ Scarica l'ultima beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest/download/AutoRoomEQ_Desktop_beta_win64.zip)** ([note di rilascio](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)). Funziona su Windows 10/11 a 64 bit ed è un singolo `.exe`, senza installazione.
 
 Cosa trovi nell'app:
 
