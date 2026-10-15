@@ -7,7 +7,7 @@
 **[⬇ Download the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest/download/AutoRoomEQ_Desktop_beta_win64.zip)** ([release notes](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)) · Windows 10/11 x64 · single `.exe`, no installer
 
 AutoRoomEQ Desktop is a room-correction workstation and a bit-perfect music player in one exe.
-It is built around **AutoRoomEQ 2.1** by DSPxLab.
+It is built around **AutoRoomEQ 2.1** HTML version by DSPxLab available on GumRoad ( https://gumroad.com/products/iuooua ).
 
 ## Beta testers: 3 steps
 
