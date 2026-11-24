@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/github/v/release/Rexxus69/AutoRoomEQ-Desktop-Beta?include_prereleases&label=version&color=orange)](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)
 [![Downloads latest](https://img.shields.io/github/downloads/Rexxus69/AutoRoomEQ-Desktop-Beta/latest/total?label=latest%20downloads)](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)
+[![Downloads 0.2.7](https://img.shields.io/github/downloads/Rexxus69/AutoRoomEQ-Desktop-Beta/v0.2.7-beta/total?label=0.2.7%20downloads)](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/tag/v0.2.7-beta)
 [![Total downloads](https://img.shields.io/github/downloads/Rexxus69/AutoRoomEQ-Desktop-Beta/total?label=total%20downloads)](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases)
 
 **[⬇ Download the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest/download/AutoRoomEQ_Desktop_beta_win64.zip)** ([release notes](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest)) · Windows 10/11 x64 · single `.exe`, no installer
@@ -17,7 +18,13 @@ It is built around **AutoRoomEQ 2.1** HTML version by DSPxLab available on GumRo
 
 ## What's new
 
-See the [release notes of the latest beta](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest). From 0.2.3 the app **updates itself**: when a new beta is out it shows *Update now*.
+**0.2.7 beta**
+- **Play on network players (UPnP/DLNA)**, also **already room-corrected** for renderers that cannot load a FIR
+- **Phone remote with the same commands as the PC**: radio memories, play all / shuffle, queue, playlists, RoomEQ presets, sleep timer, network players
+- **DSP page** back, with PEQ export (up to 30 bands) to a Wi-Fi DSP preamp
+- Covers from the album folder or PDF booklet; simpler Home and Connections
+
+Full list in the [release notes](https://github.com/Rexxus69/AutoRoomEQ-Desktop-Beta/releases/latest). From 0.2.3 the app **updates itself**: when a new beta is out it shows *Update now*.
 
 ## What it does
 
@@ -29,8 +36,8 @@ See the [release notes of the latest beta](https://github.com/Rexxus69/AutoRoomE
   - Library with search, browsing by artist, album, genre, composer and year, playlists, favourites, and lyrics and artwork fetched online.
   - Web radio with live metadata.
   - Streaming services (Qobuz, Tidal, Spotify…) are not built in. The app is a UPnP/DLNA renderer, so apps that can send a streaming service to a UPnP renderer should play through the correction (not tested with every app yet: feedback welcome); or use the Equalizer APO export to correct every app on the PC.
-- **Phone remote.** Pair your phone by QR code or 6-digit code. The remote works on Wi-Fi and, through an encrypted relay, on mobile data.
-- **UPnP/DLNA.** Your PC library is shared on the LAN as a MediaServer. The app also acts as a MediaRenderer, so other apps can play on it.
+- **Phone remote.** Pair your phone by QR code or 6-digit code. The remote has the same commands as the PC player and works on Wi-Fi and, through an encrypted relay, on mobile data.
+- **UPnP/DLNA.** Your PC library is shared on the LAN as a MediaServer. The app also acts as a MediaRenderer, so other apps can play on it, and as a control point: it sends music to network players, optionally already room-corrected.
 - **AutoRoomEQ Player for Android.** It pairs with the desktop app: it works as a remote, and you can exchange presets, playlists, favourites and mic calibration.
 - **No sleep during playback.** Windows does not go to standby while music is playing or a measurement is running.
 

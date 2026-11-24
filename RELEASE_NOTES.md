@@ -1,17 +1,17 @@
-## AutoRoomEQ Desktop 0.2.3 beta
+## AutoRoomEQ Desktop 0.2.7 beta
 
-**Download:** `AutoRoomEQ_Desktop_0.2.3_beta_win64.zip`. Unzip it and run `AutoRoomEQ Desktop.exe` (Windows 10/11 x64).
-From this version the app **updates itself**: when a new beta is out it shows a box with *Update now*.
+**Download:** `AutoRoomEQ_Desktop_0.2.7_beta_win64.zip`. Unzip it and run `AutoRoomEQ Desktop.exe` (Windows 10/11 x64).
+If you have 0.2.3 installed, the app offers *Update now* by itself.
 
 ### What's new
-- **All PRO engine features unlocked for 45 days** in this beta (FIR Hybrid, multi-position, separate L/R, DSP / Active XO, EQ APO, unlimited exports). A Gumroad licence still works as usual.
-- **Self-update** from this page (download is verified with SHA-256; settings, presets and library are kept).
-- **Gain up to +12 dB** with a peak limiter (FIR correction lowers the level).
-- **More album covers**: second source (Deezer) and song search when the album tag is missing.
-- **Phone remote**: Bypass / RoomEQ buttons on the Player page; panel renamed *Connections*.
-- **AutoRoomEQ Player (Android)** can pair with the PC (QR / 6-digit code) and exchange presets, playlists, favourites and mic calibration.
-- **New app icon** (exe, taskbar and the phone remote page).
-- **Fixes**: player showing an old track while a radio stream plays; beta date; artwork disappearing on refresh; long sessions getting slow (library reloaded only when it changes, fewer background lookups); diagnostic log for freezes.
+- **Play on network players (UPnP/DLNA)**: the PC finds the renderers on your network and sends them the track, the playlist or the web radio; the PC stays silent while it streams. Volume, play/pause and next/previous from the player bar.
+- **Room correction on the network player**: tracks and web radios can go out **already corrected** with the RoomEQ FIR of the player, for renderers that cannot load a FIR themselves. A RoomEQ measurement can also run on the network player in use.
+- **Phone remote with the same commands as the PC**: radio memories (play, save, remove), *Play all* / *Shuffle* of any library view, the play queue, your playlists, RoomEQ presets, sleep timer and the network players (connect, volume, correction on/off).
+- **DSP page** available again (active crossover / PEQ setup), with export of up to 30 PEQ bands per channel to a Wi-Fi DSP preamp.
+- **Album covers from the folder or the PDF booklet** (also in the parent folder), preferred over online covers.
+- **Simpler interface**: one *Start* button on Home, shorter Connections card, radio presets and recent stations as tiles; app language follows Windows (IT/EN/FR/DE).
+- **Anonymous beta statistics (opt-in)**: asked once; Windows version, audio outputs, feature use, listening minutes, library formats and technical errors. Never titles, files, searches or position; you can switch it off from Home.
+- **Fixes**: Bluetooth headset hands-free microphone no longer proposed for measurements; mobile-data remote (relay) reconnects at once; steadier web radio.
 
 ### Beta
 This build expires 90 days after its build date. Report problems in Issues and attach `%APPDATA%\AutoRoomEQ Desktop\logs\` (log, `crash.txt`, `.dmp` files).
